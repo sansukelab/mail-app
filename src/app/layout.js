@@ -1,5 +1,6 @@
 import "./globals.css";
 import Link from "next/link";
+import { Analytics } from "@vercel/analytics/next";
 
 export default function RootLayout({ children }) {
   return (
@@ -56,6 +57,7 @@ export default function RootLayout({ children }) {
           <Link href="/privacy">Privacy Policy</Link> ｜{" "}
           <Link href="/terms">Terms of Service</Link>
         </footer>
+        <Analytics />
       </body>
     </html>
   );
